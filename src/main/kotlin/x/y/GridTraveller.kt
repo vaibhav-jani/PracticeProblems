@@ -2,7 +2,10 @@ package x.y
 
 fun main() {
 
-    val g1 = gridTraveller(40, 40, HashMap())
+    val t1 = System.currentTimeMillis()
+    val g1 = gridTraveller(4000, 4000, HashMap())
+    val t2 = System.currentTimeMillis()
+    println("[Took: ${t2 - t1}]")
     println(g1)
 }
 
@@ -11,7 +14,7 @@ fun gridTraveller(m: Long, n: Long, memo: HashMap<String, Long>): Long {
     val key = "$m,$n"
     if (memo.containsKey(key)) {
         return memo[key]!!
-    }
+    } 
 
     if (m == 0L || n == 0L) {
         return 0L
