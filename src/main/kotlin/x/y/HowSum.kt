@@ -8,42 +8,41 @@ fun main() {
     val sum = 7L*/
 
     val arr1 = arrayOf(14L, 7L)
-    val memo = HashMap<Long, Boolean>()
-    val result = ArrayList<Long>()
-    val sum = 300L
+    val memo = HashMap<Long, ArrayList<Long>?>()
+    val sum = 350L
 
-    println("${howSum(sum, arr1, memo, result)}")
-    println("canSum() called with: sum = $sum, $result")
+    /*val arr1 = arrayOf(1L, 2L, 5L, 25L)
+    val memo = HashMap<Long, ArrayList<Long>?>()
+    val sum = 100L*/
+
+    val result = howSum(sum, arr1, memo)
+    println("$result")
 
 }
-
-fun howSum(sum: Long, arr: Array<Long>, memo: HashMap<Long, Boolean>, result: ArrayList<Long>): Boolean {
-
-    println("canSum() called with: sum = $sum, $memo")
+fun howSum(sum: Long, arr: Array<Long>, memo: HashMap<Long, ArrayList<Long>?>): ArrayList<Long>? {
 
     if (memo.containsKey(sum)) {
-        return memo[sum]!!
+        return memo[sum]
     }
 
     if (sum == 0L) {
-        return true
+        return ArrayList()
     }
 
     if (sum < 0) {
-        return false
+        return null
     }
 
     arr.forEach { number ->
         val reminder = sum - number
-        val howSum = howSum(reminder, arr, memo, result)
-        memo[sum] = howSum
-        result.add(number)
-        if (howSum) {
-            return true
-        } else {
-            result.clear()
+        val howSum = howSum(reminder, arr, memo)
+        if (howSum != null) {
+            howSum.add(number)
+            memo[sum] = howSum
+            return howSum
         }
     }
 
-    return false
+    memo[sum] = null
+    return null
 }
