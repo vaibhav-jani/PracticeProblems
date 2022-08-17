@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="More practice">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/CanSum.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/x/y/GridTraveller.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/GridTraveller.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +50,14 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.GridTravellerKt">
+  <component name="RunManager" selected="Kotlin.CanSumKt">
+    <configuration name="CanSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="x.y.CanSumKt" />
+      <module name="HelloWorld" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FibbonacciKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="x.y.FibbonacciKt" />
       <module name="HelloWorld" />
@@ -79,29 +86,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="x.y.MainKt" />
-      <module name="HelloWorld" />
-      <option name="PROGRAM_PARAMETERS" value="Abc Def werf sfv" />
-      <shortenClasspath name="NONE" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Kotlin.CanSumKt" />
       <item itemvalue="Kotlin.GridTravellerKt" />
       <item itemvalue="Kotlin.FibbonacciKt" />
       <item itemvalue="Kotlin.LinkedListKt" />
       <item itemvalue="Kotlin.LongestSubStringKt" />
-      <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.CanSumKt" />
         <item itemvalue="Kotlin.GridTravellerKt" />
         <item itemvalue="Kotlin.FibbonacciKt" />
         <item itemvalue="Kotlin.LinkedListKt" />
         <item itemvalue="Kotlin.LongestSubStringKt" />
-        <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
   </component>
@@ -135,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660481408969</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="More practice">
+      <created>1660717088170</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660717088170</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
