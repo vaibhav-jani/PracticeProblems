@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="More practice">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/CanSum.kt" afterDir="false" />
+    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="Can sum">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/HowSum.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/x/y/CanSum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/CanSum.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +73,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HowSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="x.y.HowSumKt" />
+      <module name="HelloWorld" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LinkedListKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="x.y.LinkedListKt" />
       <module name="HelloWorld" />
@@ -79,27 +87,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestSubStringKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="x.y.LongestSubStringKt" />
-      <module name="HelloWorld" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Kotlin.CanSumKt" />
+      <item itemvalue="Kotlin.HowSumKt" />
       <item itemvalue="Kotlin.GridTravellerKt" />
       <item itemvalue="Kotlin.FibbonacciKt" />
       <item itemvalue="Kotlin.LinkedListKt" />
-      <item itemvalue="Kotlin.LongestSubStringKt" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.CanSumKt" />
+        <item itemvalue="Kotlin.HowSumKt" />
         <item itemvalue="Kotlin.GridTravellerKt" />
         <item itemvalue="Kotlin.FibbonacciKt" />
         <item itemvalue="Kotlin.LinkedListKt" />
-        <item itemvalue="Kotlin.LongestSubStringKt" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660717088170</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Can sum">
+      <created>1660720980231</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660720980231</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,7 +165,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Kotlin configuration" />
     <MESSAGE value="More practice" />
-    <option name="LAST_COMMIT_MESSAGE" value="More practice" />
+    <MESSAGE value="Can sum" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can sum" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

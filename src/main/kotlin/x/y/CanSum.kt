@@ -4,7 +4,7 @@ fun main() {
 
     val arr1 = arrayOf(7L, 14L)
     val memo = HashMap<Long, Boolean>()
-    println("${canSum(42001L, arr1, memo)}")
+    println("${canSum(42000L, arr1, memo)}")
 
 }
 
