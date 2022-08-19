@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="Best sum sub array">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/CanConstruct.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="Count construct string">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/CountConstruct.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/x/y/CanConstruct.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/CanConstruct.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,25 +35,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/vaibhav/IdeaProjects/HelloWorld/src/main/kotlin/x/y",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.completion"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/vaibhav/IdeaProjects/HelloWorld/src/main/kotlin/x/y&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/kotlin/x/y" />
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.CanConstructKt">
+  <component name="RunManager" selected="Kotlin.CountConstructKt">
     <configuration name="BestSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="x.y.BestSumKt" />
       <module name="HelloWorld" />
@@ -75,8 +75,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GridTravellerKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="x.y.GridTravellerKt" />
+    <configuration name="CountConstructKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CountConstructKt" />
       <module name="HelloWorld" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,19 +90,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Kotlin.CountConstructKt" />
       <item itemvalue="Kotlin.BestSumKt" />
       <item itemvalue="Kotlin.CanConstructKt" />
       <item itemvalue="Kotlin.CanSumKt" />
       <item itemvalue="Kotlin.HowSumKt" />
-      <item itemvalue="Kotlin.GridTravellerKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.CanConstructKt" />
+        <item itemvalue="Kotlin.CountConstructKt" />
         <item itemvalue="Kotlin.BestSumKt" />
+        <item itemvalue="Kotlin.CanConstructKt" />
         <item itemvalue="Kotlin.HowSumKt" />
         <item itemvalue="Kotlin.CanSumKt" />
-        <item itemvalue="Kotlin.GridTravellerKt" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +192,8 @@
     <MESSAGE value="how sum" />
     <MESSAGE value="improved how sum" />
     <MESSAGE value="Best sum sub array" />
-    <option name="LAST_COMMIT_MESSAGE" value="Best sum sub array" />
+    <MESSAGE value="Count construct string" />
+    <option name="LAST_COMMIT_MESSAGE" value="Count construct string" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
