@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="Count construct string">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/AllConstruct.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="All construct string">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/x/y/AllConstruct.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/AllConstruct.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660908134644</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="All construct string">
+      <created>1660915474679</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1660915474679</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,7 +206,8 @@
     <MESSAGE value="improved how sum" />
     <MESSAGE value="Best sum sub array" />
     <MESSAGE value="Count construct string" />
-    <option name="LAST_COMMIT_MESSAGE" value="Count construct string" />
+    <MESSAGE value="All construct string" />
+    <option name="LAST_COMMIT_MESSAGE" value="All construct string" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
