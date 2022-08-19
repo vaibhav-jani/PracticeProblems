@@ -3,8 +3,11 @@ fun main() {
 
     val memo = HashMap<String, ArrayList<ArrayList<String>>>()
 
-    val str = "abcdef"
-    val arr = arrayOf("a", "b", "c", "d", "ab", "bc", "def", "abc", "cd", "ef")
+    /*val str = "abcdef"
+    val arr = arrayOf("bc", "def","a", "b", "c", "d", "ab", "abc", "cd", "ef")*/
+
+    val str = "purple"
+    val arr = arrayOf("purp", "p", "ur", "le", "purpl")
     //val arr = arrayOf("ab", "abc", "cd", "def", "abcd", "ef", "c")
 
     /*val str = "purple"
@@ -40,29 +43,29 @@ fun allConstruct(
     }
 
     val arrayList = ArrayList<ArrayList<String>>()
-    arr.forEach { value ->
-        if (str.startsWith(value)) {
-            val remaining = str.replaceFirst(value, "")
-            val countConstruct = allConstruct(remaining, arr, memo)
-            val combination: ArrayList<ArrayList<String>> = countConstruct.let {
+    arr.forEach { word ->
+        if (str.startsWith(word)) {
+            val remaining = str.replaceFirst(word, "")
+            val suffixWays = allConstruct(remaining, arr, memo)
+            val suffixWaysClone: ArrayList<ArrayList<String>> = suffixWays.let {
                 val newList = ArrayList<ArrayList<String>>()
                 newList.addAll(it)
                 newList
             }
-            val newCombination = ArrayList<ArrayList<String>>()
-            if (combination.isNotEmpty()) {
-                combination.forEach {
-                    val list: ArrayList<String> = it.let {
+            val updatedSuffixWays = ArrayList<ArrayList<String>>()
+            if (suffixWaysClone.isNotEmpty()) {
+                suffixWaysClone.forEach { suffixWay ->
+                    val suffixWayClone: ArrayList<String> = suffixWay.let {
                         val newList = ArrayList<String>()
-                        newList.addAll(it)
+                        newList.addAll(suffixWay)
                         newList
                     }
-                    list.add(value)
-                    newCombination.add(list)
+                    suffixWayClone.add(0, word)
+                    updatedSuffixWays.add(suffixWayClone)
                 }
-                println("combination: $combination")
+                println("combination: $suffixWays")
             }
-            arrayList.addAll(newCombination)
+            arrayList.addAll(updatedSuffixWays)
         }
 
         println("--------------------------------")
