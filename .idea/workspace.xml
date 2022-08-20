@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="Grid traveller tabulation">
+    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="Can sum tabulation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/x/y/CanSum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/CanSum.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/x/y/HowSum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/HowSum.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.CanSumKt">
+  <component name="RunManager" selected="Kotlin.HowSumKt">
     <configuration name="AllConstructKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AllConstructKt" />
       <module name="HelloWorld" />
@@ -63,13 +63,6 @@
     </configuration>
     <configuration name="CanSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="x.y.CanSumKt" />
-      <module name="HelloWorld" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountConstructKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CountConstructKt" />
       <module name="HelloWorld" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -89,20 +82,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HowSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="x.y.HowSumKt" />
+      <module name="HelloWorld" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Kotlin.AllConstructKt" />
-      <item itemvalue="Kotlin.CountConstructKt" />
       <item itemvalue="Kotlin.FibbonacciKt" />
       <item itemvalue="Kotlin.CanSumKt" />
+      <item itemvalue="Kotlin.HowSumKt" />
       <item itemvalue="Kotlin.GridTravellerKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.HowSumKt" />
         <item itemvalue="Kotlin.CanSumKt" />
         <item itemvalue="Kotlin.GridTravellerKt" />
         <item itemvalue="Kotlin.FibbonacciKt" />
         <item itemvalue="Kotlin.AllConstructKt" />
-        <item itemvalue="Kotlin.CountConstructKt" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661009252191</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Can sum tabulation">
+      <created>1661012018105</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1661012018105</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,7 +247,8 @@
     <MESSAGE value="Renamed all construct for better readability" />
     <MESSAGE value="Big fibonacci tabulation" />
     <MESSAGE value="Grid traveller tabulation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Grid traveller tabulation" />
+    <MESSAGE value="Can sum tabulation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can sum tabulation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
