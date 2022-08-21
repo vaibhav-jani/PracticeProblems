@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="Can sum tabulation">
+    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="How sum tabulation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/x/y/HowSum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/HowSum.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/x/y/BestSum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/BestSum.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +53,9 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.HowSumKt">
-    <configuration name="AllConstructKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AllConstructKt" />
+  <component name="RunManager" selected="Kotlin.BestSumKt">
+    <configuration name="BestSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="x.y.BestSumKt" />
       <module name="HelloWorld" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,19 +90,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Kotlin.AllConstructKt" />
       <item itemvalue="Kotlin.FibbonacciKt" />
+      <item itemvalue="Kotlin.BestSumKt" />
       <item itemvalue="Kotlin.CanSumKt" />
       <item itemvalue="Kotlin.HowSumKt" />
       <item itemvalue="Kotlin.GridTravellerKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.BestSumKt" />
         <item itemvalue="Kotlin.HowSumKt" />
         <item itemvalue="Kotlin.CanSumKt" />
         <item itemvalue="Kotlin.GridTravellerKt" />
         <item itemvalue="Kotlin.FibbonacciKt" />
-        <item itemvalue="Kotlin.AllConstructKt" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661012018105</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="How sum tabulation">
+      <created>1661014543069</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1661014543069</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,7 +255,8 @@
     <MESSAGE value="Big fibonacci tabulation" />
     <MESSAGE value="Grid traveller tabulation" />
     <MESSAGE value="Can sum tabulation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Can sum tabulation" />
+    <MESSAGE value="How sum tabulation" />
+    <option name="LAST_COMMIT_MESSAGE" value="How sum tabulation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
