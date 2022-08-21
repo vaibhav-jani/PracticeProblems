@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="Best sum tabulation">
+    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="Can construct tabulation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/x/y/CanConstruct.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/CanConstruct.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/x/y/CountConstruct.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/CountConstruct.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.CanConstructKt">
+  <component name="RunManager" selected="Kotlin.CountConstructKt">
     <configuration name="BestSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="x.y.BestSumKt" />
       <module name="HelloWorld" />
@@ -68,8 +68,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CanSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="x.y.CanSumKt" />
+    <configuration name="CountConstructKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CountConstructKt" />
       <module name="HelloWorld" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,19 +90,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Kotlin.CountConstructKt" />
       <item itemvalue="Kotlin.MainKt" />
       <item itemvalue="Kotlin.BestSumKt" />
       <item itemvalue="Kotlin.CanConstructKt" />
-      <item itemvalue="Kotlin.CanSumKt" />
       <item itemvalue="Kotlin.HowSumKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.CountConstructKt" />
         <item itemvalue="Kotlin.CanConstructKt" />
         <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.BestSumKt" />
         <item itemvalue="Kotlin.HowSumKt" />
-        <item itemvalue="Kotlin.CanSumKt" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661014543069</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Can construct tabulation">
+      <created>1661065389145</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1661065389145</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,7 +263,8 @@
     <MESSAGE value="Grid traveller tabulation" />
     <MESSAGE value="Can sum tabulation" />
     <MESSAGE value="How sum tabulation" />
-    <option name="LAST_COMMIT_MESSAGE" value="How sum tabulation" />
+    <MESSAGE value="Can construct tabulation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can construct tabulation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
