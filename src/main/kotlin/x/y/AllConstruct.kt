@@ -1,13 +1,12 @@
-
 fun main() {
 
     val memo = HashMap<String, ArrayList<ArrayList<String>>>()
 
-    /*val str = "abcdef"
-    val arr = arrayOf("bc", "def","a", "b", "c", "d", "ab", "abc", "cd", "ef")*/
+    val str = "abcdef"
+    val arr = arrayOf("bc", "def","a", "b", "c", "d", "ab", "abc", "cd", "ef")
 
-    val str = "purple"
-    val arr = arrayOf("purp", "p", "ur", "le", "purpl")
+    /*val str = "purple"
+    val arr = arrayOf("purp", "p", "ur", "le", "purpl")*/
     //val arr = arrayOf("ab", "abc", "cd", "def", "abcd", "ef", "c")
 
     /*val str = "purple"
@@ -21,7 +20,7 @@ fun main() {
 
     /*val str = "enterapotentpot"
     val arr = arrayOf("a", "p", "ent", "enter", "ot", "o", "t")*/
-    println(allConstruct(str, arr, memo))
+    println(allConstructTable(str, arr))
 }
 
 fun allConstruct(
@@ -34,7 +33,7 @@ fun allConstruct(
         return memo[str]!!
     }
 
-    println("countConstruct() called with: str = $str")
+    println("allConstruct() called with: str = $str")
 
     if (str.isEmpty()) {
         val list = ArrayList<ArrayList<String>>()
@@ -63,15 +62,53 @@ fun allConstruct(
                     suffixWayClone.add(0, word)
                     updatedSuffixWays.add(suffixWayClone)
                 }
-                println("combination: $suffixWays")
             }
             arrayList.addAll(updatedSuffixWays)
         }
 
-        println("--------------------------------")
     }
-    println("===================================")
     memo[str] = arrayList
     return arrayList
 }
 
+fun allConstructTable(
+    target: String,
+    words: Array<String>
+): ArrayList<ArrayList<String>> {
+
+    val table = Array(target.length + 1) {
+        ArrayList<ArrayList<String>>()
+    }
+
+    val first = table[0]
+    first.add(ArrayList())
+    table[0] = first
+
+    for (index in 0..target.length) {
+        val current = table[index]
+        if (current.isNotEmpty()) {
+            words.forEach { word ->
+                if (target.substring(index, target.length).startsWith(word)) {
+                    val wordLength = word.length
+                    if (index + wordLength <= target.length) {
+                        // Cloning to avoid references
+                        val newList = ArrayList<ArrayList<String>>()
+                        current.forEach { combination ->
+                            // Cloning to avoid references
+                            val newCombination = ArrayList<String>()
+                            newCombination.addAll(combination)
+                            newCombination.add(word)
+                            newList.add(newCombination)
+                        }
+                        table[index + wordLength].addAll(newList)
+                    }
+                }
+            }
+        }
+    }
+
+    for (index in 0..target.length) {
+        println(" $index: ${table[index]}")
+    }
+    return table[target.length]
+}
