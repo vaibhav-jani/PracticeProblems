@@ -5,24 +5,29 @@ import kotlin.collections.HashMap
 
 fun main() {
 
-
-    val memo = HashMap<String, Boolean>()
+    //val memo = HashMap<String, Boolean>()
 
     /*val str = "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef"
     val arr = arrayOf("e", "ee", "eee", "eeee", "eeeee", "eeeeee")
     println(canConstruct(str, arr, memo))*/
 
-    val str = "abcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyz abcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyz"
+    /*val str = "abcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyz abcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyz"
     val arr = arrayOf(" ", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z")
-    println(canConstruct(str, arr, memo))
+    println(canConstruct(str, arr, memo))*/
 
     /*val str = "abcdef"
-    val arr = arrayOf("ab", "bc", "def", "abc", "ef")
-    println(canConstruct(str, arr))*/
+    val arr = arrayOf("ab", "bc", "def", "abc", "ef")*/
+    val str = "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef"
+    val arr = arrayOf("e", "ee", "eee", "eeee", "eeeee", "eeeeee")
+    println(canConstructTable(str, arr))
 
 }
 
-fun canConstruct(str: String, arr: Array<String>, memo: HashMap<String, Boolean>): Boolean {
+fun canConstruct(
+    str: String,
+    arr: Array<String>,
+    memo: HashMap<String, Boolean>
+): Boolean {
 
     println("canConstruct() called with: str = $str")
     if (memo.containsKey(str)) {
@@ -46,7 +51,10 @@ fun canConstruct(str: String, arr: Array<String>, memo: HashMap<String, Boolean>
     return false
 }
 
-fun canConstruct2(str: String, arr: Array<String>): Boolean {
+fun canConstructBruteForce(
+    str: String,
+    arr: Array<String>
+): Boolean {
     println("canConstruct() called with: str = $str")
     if (str.isEmpty()) {
         return true
@@ -54,7 +62,7 @@ fun canConstruct2(str: String, arr: Array<String>): Boolean {
 
     arr.forEach { value ->
         if (str.startsWith(value)) {
-            if (canConstruct2(str.replaceFirst(value, ""), arr)) {
+            if (canConstructBruteForce(str.replaceFirst(value, ""), arr)) {
                 return true
             }
         }
@@ -63,7 +71,10 @@ fun canConstruct2(str: String, arr: Array<String>): Boolean {
 }
 
 
-fun canConstruct3(str: String, arr: Array<String>): Boolean {
+fun canConstructStack(
+    str: String,
+    arr: Array<String>
+): Boolean {
 
     println("canConstruct() called with: str = $str")
     if (str.isEmpty()) {
@@ -79,8 +90,40 @@ fun canConstruct3(str: String, arr: Array<String>): Boolean {
 
     println("stack = $stack")
     while (!stack.isEmpty()) {
-        return canConstruct3(stack.pop(), arr)
+        return canConstructStack(stack.pop(), arr)
     }
 
     return false
+}
+
+fun canConstructTable(
+    str: String,
+    arr: Array<String>
+): Boolean {
+
+    val table = Array(str.length + 1) {
+        false
+    }
+
+    table[0] = true
+    for (index in 0..str.length) {
+        if (table[index]) {
+            arr.forEach { word ->
+                if (str.substring(index, str.length).startsWith(word)) {
+                    val wordLength = word.length
+                    if (index + wordLength <= str.length) {
+                        table[index + wordLength] = true
+                    }
+                    println("$index ${word} : ${table[index]}")
+                    println("-----------------------")
+                }
+            }
+        }
+    }
+
+    for (index in 0..str.length) {
+        println("$index : ${table[index]}")
+    }
+
+    return table[str.length]
 }

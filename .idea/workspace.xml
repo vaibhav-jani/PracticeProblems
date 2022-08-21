@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="How sum tabulation">
+    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="Best sum tabulation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/x/y/BestSum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/BestSum.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/x/y/CanConstruct.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/CanConstruct.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +53,16 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.BestSumKt">
+  <component name="RunManager" selected="Kotlin.CanConstructKt">
     <configuration name="BestSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="x.y.BestSumKt" />
+      <module name="HelloWorld" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CanConstructKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="x.y.CanConstructKt" />
       <module name="HelloWorld" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -68,20 +75,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FibbonacciKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="x.y.FibbonacciKt" />
-      <module name="HelloWorld" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GridTravellerKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="x.y.GridTravellerKt" />
-      <module name="HelloWorld" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HowSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="x.y.HowSumKt" />
       <module name="HelloWorld" />
@@ -89,20 +82,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="x.y.MainKt" />
+      <module name="HelloWorld" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Kotlin.FibbonacciKt" />
+      <item itemvalue="Kotlin.MainKt" />
       <item itemvalue="Kotlin.BestSumKt" />
+      <item itemvalue="Kotlin.CanConstructKt" />
       <item itemvalue="Kotlin.CanSumKt" />
       <item itemvalue="Kotlin.HowSumKt" />
-      <item itemvalue="Kotlin.GridTravellerKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.CanConstructKt" />
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.BestSumKt" />
         <item itemvalue="Kotlin.HowSumKt" />
         <item itemvalue="Kotlin.CanSumKt" />
-        <item itemvalue="Kotlin.GridTravellerKt" />
-        <item itemvalue="Kotlin.FibbonacciKt" />
       </list>
     </recent_temporary>
   </component>
