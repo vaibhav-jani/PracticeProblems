@@ -22,6 +22,46 @@ fun main() {
     println("---------------------------------------")
     println(decodeTreeReader(root, StringReader("AGHBBCDEAGJCDF")))
     println("---------------------------------------")
+    val decoder = Decoder(root, StringReader("AGHBBCDEAGJCDF"))
+    while (decoder.hasNext()) {
+        val next = decoder.next()
+        print(next)
+    }
+    println()
+    println("---------------------------------------")
+}
+
+class Decoder(
+    private val root: DNode,
+    private val reader: StringReader
+) : Iterator<String> {
+
+    override fun hasNext(): Boolean {
+        reader.mark(0)
+        val read = reader.read()
+        reader.reset()
+        return read > 0
+    }
+
+    override fun next(): String {
+        val read = reader.read()
+        return decode(read.toChar().toString(), root)
+    }
+
+    private fun decode(code: String, root: DNode?): String {
+        val queue: Queue<DNode> = LinkedList()
+        if (root != null) {
+            queue.add(root)
+        }
+        while (queue.isNotEmpty()) {
+            val first = queue.remove()
+            if (first.code == code) {
+                return first.decode
+            }
+            queue.addAll(first.children)
+        }
+        return ""
+    }
 }
 
 fun decodeTreeReader(
@@ -30,7 +70,7 @@ fun decodeTreeReader(
 ): String {
     val builder = StringBuilder()
     var current = reader.read()
-    while(current > 0) {
+    while (current > 0) {
         builder.append(decode(current.toChar().toString(), root))
         current = reader.read()
     }
@@ -54,7 +94,7 @@ fun decode(code: String, root: DNode?): String {
     if (root != null) {
         queue.add(root)
     }
-    while(queue.isNotEmpty()) {
+    while (queue.isNotEmpty()) {
         val first = queue.remove()
         if (first.code == code) {
             return first.decode
@@ -76,7 +116,7 @@ fun bfsDTree(root: DNode?) {
     if (root != null) {
         queue.add(root)
     }
-    while(queue.isNotEmpty()) {
+    while (queue.isNotEmpty()) {
         val first = queue.remove()
         println("${first.code}")
         queue.addAll(first.children)
