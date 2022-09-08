@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="Decoding encoded tree string reader">
+    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="Decoding encoded tree string reader iterator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/x/y/DecodeTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/DecodeTree.kt" afterDir="false" />
     </list>
@@ -248,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662645209007</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Decoding encoded tree string reader iterator">
+      <created>1662646739801</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1662646739801</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,7 +287,8 @@
     <MESSAGE value="Can construct tabulation" />
     <MESSAGE value="Count construct tabulation" />
     <MESSAGE value="Decoding encoded tree string reader" />
-    <option name="LAST_COMMIT_MESSAGE" value="Decoding encoded tree string reader" />
+    <MESSAGE value="Decoding encoded tree string reader iterator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Decoding encoded tree string reader iterator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
