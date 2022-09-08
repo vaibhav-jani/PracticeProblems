@@ -1,5 +1,6 @@
 package x.y
 
+import java.io.StringReader
 import java.util.*
 
 fun main() {
@@ -16,7 +17,24 @@ fun main() {
     val root = DNode("", "", listOf(nodeA, nodeB, nodeC))
 
     bfsDTree(root)
+    println("---------------------------------------")
     println(decodeTree(root, "AGHBBCDEAGJCDF"))
+    println("---------------------------------------")
+    println(decodeTreeReader(root, StringReader("AGHBBCDEAGJCDF")))
+    println("---------------------------------------")
+}
+
+fun decodeTreeReader(
+    root: DNode,
+    reader: StringReader
+): String {
+    val builder = StringBuilder()
+    var current = reader.read()
+    while(current > 0) {
+        builder.append(decode(current.toChar().toString(), root))
+        current = reader.read()
+    }
+    return builder.toString()
 }
 
 fun decodeTree(

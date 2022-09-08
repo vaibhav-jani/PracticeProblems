@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="Count construct tabulation">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/DecodeTree.kt" afterDir="false" />
+    <list default="true" id="58302c0f-3041-4cae-8b45-84579e8b0523" name="Changes" comment="Decoding encoded tree">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/x/y/DecodeTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/x/y/DecodeTree.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,10 +99,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.DecodeTreeKt" />
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.AllConstructKt" />
         <item itemvalue="Kotlin.CountConstructKt" />
         <item itemvalue="Kotlin.CanConstructKt" />
-        <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
   </component>
