@@ -10,11 +10,11 @@ fun main() {
     val nodeE = DNode("E", "o")
     val nodeF = DNode("F", "there")
     val nodeB = DNode("B", "l")
-    val nodeD = DNode("D", "", listOf(nodeE, nodeF))
-    val nodeG = DNode("G", "", listOf(nodeH, nodeJ))
-    val nodeC = DNode("C", "", listOf(nodeD))
-    val nodeA = DNode("A", "", listOf(nodeG))
-    val root = DNode("", "", listOf(nodeA, nodeB, nodeC))
+    val nodeD = DNode("D", null, listOf(nodeE, nodeF))
+    val nodeG = DNode("G", null, listOf(nodeH, nodeJ))
+    val nodeC = DNode("C", null, listOf(nodeD))
+    val nodeA = DNode("A", null, listOf(nodeG))
+    val root = DNode("", null, listOf(nodeA, nodeB, nodeC))
 
     bfsDTree(root)
     println("---------------------------------------")
@@ -25,16 +25,21 @@ fun main() {
     val decoder = Decoder(root, StringReader("AGHBBCDEAGJCDF"))
     while (decoder.hasNext()) {
         val next = decoder.next()
-        print(next)
+        if (next != null) {
+            println(next)
+        } else {
+            println("-")
+        }
     }
-    println()
     println("---------------------------------------")
 }
 
 class Decoder(
     private val root: DNode,
     private val reader: StringReader
-) : Iterator<String> {
+) : Iterator<String?> {
+
+    private var start: DNode? = root
 
     override fun hasNext(): Boolean {
         reader.mark(0)
@@ -43,12 +48,26 @@ class Decoder(
         return read > 0
     }
 
-    override fun next(): String {
+    override fun next(): String? {
         val read = reader.read()
-        return decode(read.toChar().toString(), root)
+        val code = read.toChar().toString()
+        //println("-----")
+        //println("Searching $code from : ${start?.code}")
+        val next = findNext(code, start)
+        val found = next?.decode
+        // only leaf nodes have decode values
+        // once we reach there we have to start over
+        start = if (found != null) {
+            root
+        } else {
+            next
+        }
+        //println("Found : $found")
+        //println("-----")
+        return found
     }
 
-    private fun decode(code: String, root: DNode?): String {
+    private fun findNext(code: String, root: DNode?): DNode? {
         val queue: Queue<DNode> = LinkedList()
         if (root != null) {
             queue.add(root)
@@ -56,11 +75,11 @@ class Decoder(
         while (queue.isNotEmpty()) {
             val first = queue.remove()
             if (first.code == code) {
-                return first.decode
+                return first
             }
             queue.addAll(first.children)
         }
-        return ""
+        return null
     }
 }
 
@@ -97,7 +116,7 @@ fun decode(code: String, root: DNode?): String {
     while (queue.isNotEmpty()) {
         val first = queue.remove()
         if (first.code == code) {
-            return first.decode
+            return first.decode ?: ""
         }
         queue.addAll(first.children)
     }
@@ -107,7 +126,7 @@ fun decode(code: String, root: DNode?): String {
 
 data class DNode(
     val code: String = "",
-    val decode: String = "",
+    val decode: String? = null,
     val children: List<DNode> = emptyList()
 )
 
@@ -118,7 +137,7 @@ fun bfsDTree(root: DNode?) {
     }
     while (queue.isNotEmpty()) {
         val first = queue.remove()
-        println("${first.code}")
+        println(first.code)
         queue.addAll(first.children)
     }
 }
